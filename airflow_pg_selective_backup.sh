@@ -127,9 +127,10 @@ success "Found PostgreSQL host: ${PG_HOST}"
 
 # PostgreSQL connection parameters
 PG_PORT="5432"
-PG_DB="bitnami_airflow"
-PG_USER="bn_airflow"
-PG_PASSWORD="data-sync"
+# export
+PG_DB="$PG_DB"
+PG_USER="$PG_USER"
+PG_PASSWORD="$PG_PASSWORD"
 
 # Test PostgreSQL connectivity
 log "Testing PostgreSQL connectivity..."

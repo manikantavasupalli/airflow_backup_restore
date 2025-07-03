@@ -156,6 +156,10 @@ Follow restore section mentioned in airflow_selective_backup_restore_raw_steps.m
 Use this method when Airflow web pods are completely crashed but PostgreSQL is still accessible.
 
 #### Backup Process
+# export the postgres credentials
+export PG_DB=""
+export PG_USER=""
+export PG_PASSWORD=""
 
 ```bash
 # 1. Set up Kubernetes context
